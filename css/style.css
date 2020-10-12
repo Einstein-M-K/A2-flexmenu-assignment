@@ -1,0 +1,85 @@
+/*@TODO (6) : Specify what each selector and property-value pair does and means*/
+/*defigns and adds a box page border to the whole page*/
+html {
+  box-sizing: border-box;
+}
+/* this inherits the attributes of box-sizing propertyfor all elements */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.5em;
+
+}
+/* this sets font size of all h1 headers by 4times its current font while font weight remains normal*/
+h1 {
+  font-size: 4em;
+  font-weight: normal;
+}
+/* this sets font size of all h2 headers by 1.2times its current font while sets the margin area on the top of h2 headers to default */
+h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+/* this sets the border line width to 3px,line style to solid */
+#menu {
+  border: 3px solid #783F27;
+  /* float: left; */
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-left: 200px;
+}
+section {
+  background: #F6F3ED;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted maroon;
+  width: 255px;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  align-content:space-around;
+  flex-direction: column;
+}
+
+.dish{
+  padding: 35px;
+  width: 30%;
+  text-align: left;
+  height: 25%
+}
+.dish1{
+  float: left;
+}
+.dish3{
+  clear: both;
+  float: left;
+}
+
+.dish5{
+  clear: both;
+    float: left;
+}
+.special{
+  width: 30em;
+margin-left: auto;
+margin-right: auto;
+}
+.title {
+  background-color: #783F27;
+  color: #F9AB33;
+  line-height: 4em;
+
+
+}
+/* this sets all elements of class "price" a bold type font weight,padding of 5px,content fully occupies the width and is centered within the line box */
+.price {
+  font-weight: bold;
+  background: #F9AB33;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
